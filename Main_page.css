@@ -1,0 +1,966 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-buttons .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* How It Works Section */
+.how-it-works {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.how-it-works .steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 22%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #007bff;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta .btn {
+    background-color: #ffffff;
+    color: #007bff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+footer .footer-links ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .feature-cards, .steps {
+        flex-direction: column;
+    }
+
+    .feature-cards .card, .steps .step {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    .cta-buttons .btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+
+/* The code for Header nav  */
+
+
+/* Header Section - Custom Styles */
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #333;
+    color: #fff;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    width: 48px;
+    height: 44px;
+}
+
+header .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+header .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Hamburger Menu (Hidden on larger screens) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        padding: 0;
+    }
+
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .hamburger {
+        display: flex;
+    }
+
+    /* Show the navigation when the hamburger is clicked */
+    header nav.active {
+        display: flex;
+    }
+
+    /* Adjust Button Styling for Mobile */
+    header .btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 1.1rem;
+    }
+}
+
+
+/* The code for Hero Section  */
+
+
+
+/* Hero Section - Custom Styles */
+.hero {
+    background: url('tech artificial intelligence banner background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-buttons .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design for Hero Section */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-buttons .btn {
+        width: 80%;
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Responsive Design for Hero Section */
+@media (max-width: 768px) {
+    /* Adjust padding for hero section on mobile */
+    .hero {
+        padding: 80px 20px; /* Reduced padding for mobile */
+    }
+
+    /* Adjust heading size for mobile */
+    .hero h1 {
+        font-size: 2.5rem;  /* Smaller font size for mobile */
+        margin-bottom: 20px;
+    }
+
+    /* Adjust paragraph text for mobile */
+    .hero p {
+        font-size: 1rem; /* Smaller font size for mobile */
+        margin-bottom: 20px;
+    }
+
+    /* Stack CTA buttons vertically on smaller screens */
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    /* Adjust button size and spacing for mobile */
+    .cta-buttons .btn {
+        width: 80%;           /* Make buttons occupy more width */
+        margin: 10px 0;       /* Space between buttons */
+        font-size: 1.2rem;    /* Increase font size slightly for mobile */
+        padding: 12px 0;      /* Adjust padding to make buttons larger */
+    }
+}
+
+/* Further Adjustments for smaller devices like phones */
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 15px; /* Further reduced padding for small phones */
+    }
+
+    .hero h1 {
+        font-size: 2rem;  /* Even smaller font size for very small screens */
+    }
+
+    .hero p {
+        font-size: 0.9rem; /* Smaller font size for small screens */
+    }
+
+    .cta-buttons .btn {
+        font-size: 1.1rem; /* Reduce button font size */
+        width: 90%;         /* Adjust button width for small screens */
+    }
+}
+
+
+
+
+
+
+/* The code for About Section  */
+
+
+
+/* About Section - Custom Styles */
+.about {
+    background-color: #f4f4f4;
+    padding: 80px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.about .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+}
+
+/* Responsive Design for About Section */
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+
+
+
+
+
+
+
+/* The code for Features  */
+
+
+
+/* Features Section - Custom Styles */
+.features {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #333;
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover; /* Ensures the image covers the card area */
+    background-position: center; /* Centers the background image */
+    color: white; /* Ensures text is visible on the background */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Keeps text at the bottom of the card */
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white; /* Makes sure the text stands out against the background */
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: white;
+    max-width: 90%;
+    margin-bottom: 20px;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Features Section */
+@media (max-width: 1024px) {
+    .feature-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .features h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+/* The code for How it works  */
+
+/* How It Works Section - Custom Styles */
+.how-it-works {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #333;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.step {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.step h3 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.step p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Hover Effects */
+.step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for How It Works Section */
+@media (max-width: 1024px) {
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .how-it-works h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .step {
+        padding: 20px;
+    }
+
+    .step h3 {
+        font-size: 1.5rem;
+    }
+
+    .step p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+/* The code for testimonials  */
+
+
+
+
+
+/* Testimonials Section - Custom Styles */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #333;
+}
+
+.testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.testimonial-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.testimonial-info {
+    text-align: left;
+}
+
+.testimonial-card h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #007bff;
+    margin: 0;
+}
+
+.testimonial-card .role {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Hover Effects */
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Testimonials Section */
+@media (max-width: 1024px) {
+    .testimonial-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .testimonial-card p {
+        font-size: 1rem;
+    }
+
+    .testimonial-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-image {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+/* The code for CTA  */
+
+/* Call to Action Section */
+.cta {
+    background-color: #007bff;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    /* border-radius: 10px; */
+    margin-top: 50px;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.cta .btn {
+    background-color: #fff;
+    color: #007bff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s ease;
+    display: inline-block;
+}
+
+.cta .btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Responsive Design for Call to Action */
+@media (max-width: 768px) {
+    .cta h2 {
+        font-size: 2rem;
+    }
+
+    .cta .btn {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+}
+
+
+
+/* The Code for Footer  */
+
+
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links ul li a:hover {
+    color: #007bff;
+}
+
+footer .social-media {
+    margin: 20px 0;
+}
+
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #007bff;
+}
+
+footer .social-media i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+footer p {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    footer .footer-links ul {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    footer .footer-links ul li {
+        margin-bottom: 10px;
+    }
+
+    footer .social-media {
+        margin: 20px 0;
+    }
+
+    footer .social-media a {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
